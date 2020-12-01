@@ -1,0 +1,296 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background: black;
+    background-size: 25%;
+    height: 500vh;
+    display: table;
+}
+
+.background-video-background {
+    background: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: -1
+}
+
+.background-video-foreground {
+    box-sizing: border-box;
+}
+
+.background-video-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 100vw;
+    height: 115vh;
+    margin-top: -7.5vh;
+    opacity: 0.7;
+}
+
+.container {
+    width: 60vw;
+    margin-left: 12.5vw;
+    z-index: 1;
+    height 10vh;
+    margin-top: 40vh;
+    align-content: center;
+}
+
+svg {
+    width: 125vw;
+    margin-bottom: 11vh;
+    z-index: 1;
+}
+
+svg .draw {
+    stroke: white;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    fill: transparent;
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    animation: animate 15s linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+
+@keyframes animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+img {
+    width: 60vw;
+    margin-left: 0vw;
+    margin-bottom: 50vh;  
+}
+
+.stills {
+    margin-top: 96vh;
+    margin-bottom: 50vh;
+}
+
+.Name {
+    font-size: 2vw;
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 1.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0vh;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    position: fixed;
+    top: 0vh;
+    text-shadow: 0px 0px 20px black;
+}
+
+.Collection {
+    font-size: 2vw;
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0vh;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    top: 0vh;
+    right: 0vw;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    position: fixed;
+    text-shadow: 0px 0px 20px black;
+    transition: 1s ease;
+    
+}
+
+.CollectionHide {
+  display: none;
+}
+
+.Collection:hover + .CollectionHide {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 4.75vh;
+    font-family: freight-big-pro, serif;
+    text-justify: inter-word;
+    text-align: justify;
+    width: 99vw;
+    margin-left: 0.5vw;
+    margin-top: 17.5vh;
+    height: 40vh;
+    text-shadow: 0px 0px 20px black;
+}
+.Collection:hover {
+    color: gold;
+    transition: 1s ease;
+}
+
+.Contact {
+    font-size: 2.5vw;
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    text-shadow: 0px 0px 30px black;
+    transition: 1s ease;
+}
+
+.ContactHide {
+  display: none;
+}
+
+.Contact:hover + .ContactHide {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 10vh;
+    font-family: freight-big-pro, serif;
+    text-justify: inter-word;
+    text-align: center;
+    width: 99vw;
+    margin-left: 0.5vw;
+    margin-top: 35vh;
+    height: 40vh;
+    text-shadow: 0px 0px 30px black;
+    transition: opacity 1s;
+}
+
+.Contact:hover {
+    color: gold;
+}
+
+.Scroll {
+    font-size: 2vw;
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    position: fixed;
+    bottom: 0vh;
+    right: 0vw;
+    text-shadow: 0px 0px 30px black;
+}
+
+a {
+    color: white;
+    display: block;
+    font-size: 2vw;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    text-shadow: 0px 0px 30px black;
+    margin-top: 0.5vh;
+    margin-bottom: 0vh;
+    bottom: 0vh;
+    text-decoration: none;
+}
+
+.ContactButton {
+    background: none;
+    border: none;
+    text-decoration: none;   
+    font-size: 2vw;
+    color: white;
+    margin-left: 0.25vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-family: freight-big-pro, serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    text-shadow: 0px 0px 30px black;
+    transition: 1s ease;
+}
+
+button:hover {
+    color: gold;
+}
+
+#ContactInfo {
+    display: block;
+    position: fixed;
+    color: white;
+    font-size: 5vh;
+    font-family: freight-big-pro, serif;
+    text-justify: inter-word;
+    text-align: center;
+    width: 99vw;
+    margin-left: 0.5vw;
+    margin-top: 35vh;
+    height: 40vh;
+    text-shadow: 0px 0px 30px black;
+    transition: opacity 1s;
+    display: none;
+}
+
+.images-1 {
+    background: url(Images/KS_Loll_Landscape_01.jpg) no-repeat;
+    width: 33vw;
+    margin-left: 12.5vw;
+    height: 50vw;
+    border: none;
+    display: block;
+}
+
+.images-1:hover {
+    background: url(Images/CamoPants_1_1296x.jpg) no-repeat;
+}
+
+.images-2 {
+    background: url(Images/201184M202007_4.png) no-repeat;
+    width: 33vw;
+    margin-left: 12.5vw;
+    height: 50vw;
+    border: none;
+    display: block;
+}
+
+.images-2:hover {
+    background: url(Images/201184M202007_4.jpg) no-repeat;
+}
+
+
+   
